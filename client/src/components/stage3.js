@@ -6,6 +6,10 @@ import Button from "@material-ui/core/Button";
 import "../css/stage3.css";
 
 export default class stage3 extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   state = {
     selections: ["Chipotle", "Mcdonalds", "Wendy", "Sushi Fuku"],
     pick: 1,
@@ -24,6 +28,19 @@ export default class stage3 extends Component {
       this.setState({ pick: 4, thirdPick: item });
     }
   };
+
+  proceed = async () => {
+    // let newRoom = this.props.room;
+    // console.log('this.props.room');
+    // console.log(this.props.room);
+    // const restaurants = await findRestaurantsByName(selections);
+    // console.log(restaurants);
+    // console.log('newRoom')
+    // console.log(newRoom);
+    // this.props.setRoom(newRoom);
+    this.props.next();
+  }
+
   render() {
     return (
       <Container className="user-dashboard-main-stage-two" fluid={true}>
@@ -61,7 +78,7 @@ export default class stage3 extends Component {
               <Grid item>
                 <Grid container direction="row" spacing={10}>
                   <Grid item>
-                    <Button variant="outlined">Confirm</Button>
+                    <Button variant="outlined" onClick={this.proceed}>Confirm</Button>
                   </Grid>
                   <Grid item>
                     <Button variant="outlined">Cancel</Button>
@@ -71,21 +88,23 @@ export default class stage3 extends Component {
               <div></div>
             </Grid>
           </div>
-          {this.state.firstPick != "" ? (
-            <div className="first-pick-tab">
-              <h1>{this.state.firstPick} is your first pick</h1>
-            </div>
-          ) : null}
-          {this.state.secondPick != "" ? (
-            <div className="first-pick-tab">
-              <h1>{this.state.secondPick} is your second pick</h1>
-            </div>
-          ) : null}
-          {this.state.thirdPick != "" ? (
-            <div className="first-pick-tab">
-              <h1>{this.state.thirdPick} is your third pick</h1>
-            </div>
-          ) : null}
+          <div>
+            {this.state.firstPick != "" ? (
+              <div className="first-pick-tab">
+                <h1>{this.state.firstPick} is your first pick</h1>
+              </div>
+            ) : null}
+            {this.state.secondPick != "" ? (
+              <div className="first-pick-tab">
+                <h1>{this.state.secondPick} is your second pick</h1>
+              </div>
+            ) : null}
+            {this.state.thirdPick != "" ? (
+              <div className="first-pick-tab">
+                <h1>{this.state.thirdPick} is your third pick</h1>
+              </div>
+            ) : null}
+          </div>
         </Container>
       </Container>
     );

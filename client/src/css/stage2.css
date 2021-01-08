@@ -63,6 +63,9 @@
   border-radius: 15px;
   font-size: 25px;
   outline: 5px black;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
 }
 
 .adds {
@@ -86,4 +89,26 @@
 
 .adds {
   font-size: 40px;
+}
+
+.first-pick-tab {
+  width: 400px;
+  height: 50px;
+  background-image: linear-gradient(#ff8b72, #ff7472);
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 200px;
+  right: 0;
+  top: 50px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.first-pick-tab h1 {
+  color: white;
+  font-size: 15px;
+  line-height: 50px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
 }

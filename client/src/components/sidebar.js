@@ -22,7 +22,7 @@ export default class sidebar extends Component {
                         <hr/>
                         <NavLink href="Expenses">Past Expenses</NavLink>
                         <hr/>
-                        <h3>Past Choices</h3>
+                        <h3>Sign Out</h3>
                         <hr/>
                     </div>
                     <div className = "blank">
