@@ -59,7 +59,6 @@ const Stage2 = ({room, setRoom, next}) => {
   };
 
     return (
-
       <Container className="user-dashboard-main-stage-two" fluid={true}>
         <Container
           className="user-dashboard-main-stage-two-content"
