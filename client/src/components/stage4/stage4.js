@@ -60,12 +60,17 @@ const extractItemsFromCategories = (categories) => {
     return menu;
 }
 
-const Stage4 = ({setBalance}) => {
+// const Stage4 = ({setBalance}) => {
+const Stage4 = ({next}) => {
     
     const [myMenuItems, setMyMenuItems] = useState([]);
     const [categories, setCategories] = useState([]);
     const [menu, setMenu] = useState([]);
     const [totalCost, setTotalCost] = useState(0);
+
+    const proceed = () => {
+        next();
+    }
 
     useEffect(async () => {
         const newCategories = await fetchCategories("5ff7919db010363394a1a011");
@@ -88,7 +93,7 @@ const Stage4 = ({setBalance}) => {
                     <AddItemForm addItem={(foodName, foodCost) => setMyMenuItems(myMenuItems.concat({name: foodName, price: foodCost}))}/>
                     <Title>My Items</Title>
                     <ItemList items={myMenuItems} clicked={(item) => console.log("Stuff")}/>
-    
+                    <Button variant="outlined" onClick={proceed} className='submit-btn'>Submit</Button>
                 </div>
             </Container>
         </div>

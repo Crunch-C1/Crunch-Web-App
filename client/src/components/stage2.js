@@ -66,7 +66,7 @@ const Stage2 = ({room, setRoom, next}) => {
         >
           <div className="user-dashboard-main-logo">
             <img src={logo}></img>
-            <h1>Pick Restaurants</h1>
+            <h1>Pick Restaurants({5 - selections.length} left)</h1>
           </div>
           <div className="user-dashboard-main-restaurants">
             <Grid container direction="column" alignItems="center" spacing={5}>
@@ -83,12 +83,12 @@ const Stage2 = ({room, setRoom, next}) => {
             <div className="entry">{item}</div>
             </Grid>
       ))}
-      {selections.length < 2 ? <Button className="adds" variant="outlined" color="primary" onClick={handleClickOpen}>
+      {selections.length < 5 ? <Button className="adds" variant="outlined" color="primary" onClick={handleClickOpen}>
         +
       </Button> : ''}
-      <Button variant="outlined" color="primary" size="large"  style={{margin: "2em"}} onClick={() => {proceed();}}>Continue</Button>
       </Grid>
       </div>
+      <Button variant="outlined" color="primary" size="large"  style={{margin: "2em"}} onClick={() => {proceed();}}>Continue</Button>
       </Grid>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title">Food Options</DialogTitle>

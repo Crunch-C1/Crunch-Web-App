@@ -38,7 +38,7 @@ const Login = () => {
         </FormGroup>
         <FormGroup className="form-button-group">
           <Button variant="outlined">
-              <a href="/search">Login</a>
+              <a href="/user">Login</a>
           </Button>
         </FormGroup>
         <FormGroup className="form-links">

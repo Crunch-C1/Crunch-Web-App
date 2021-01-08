@@ -18,6 +18,7 @@ const findRestaurantsByName = async (selections) => {
         });
         restaurants.push(res.data);
     }
+    console.log(restaurants);
     return restaurants;
 }
 
