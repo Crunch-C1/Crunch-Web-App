@@ -1,6 +1,9 @@
 .user-dashboard{
     display: grid;
-    grid-template-columns: 17% 83%;
+    grid-template-columns: 14% 86%;
     grid-template-rows: 1fr;
+    width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
