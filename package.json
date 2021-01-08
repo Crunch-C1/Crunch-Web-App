@@ -1,0 +1,13 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "Backend team, please add in the appropriate files.",
+    "main": "index.js",
+    "scripts": {
+      "heroku-prebuild": "cd backend && npm install",
+      "start": "cd backend && npm start"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  
