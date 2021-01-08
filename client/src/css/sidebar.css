@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap');
 
+@media screen and (max-width: 600px) {
+    div.side-bar {
+      display: none;
+    }
+  }
+  
 .side-bar{
     height: 100vh;
     background-image: linear-gradient(#FF8B72, #FF7472);
