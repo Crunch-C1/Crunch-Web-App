@@ -13,7 +13,7 @@ export default class stage2 extends Component {
                         <h1>Room Creation</h1>
                     </div>
                     <div className = "user-dashboard-main-restaurants">
-
+                        
                     </div>
                 </Container>
             </div>
