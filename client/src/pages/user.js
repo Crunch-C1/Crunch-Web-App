@@ -10,7 +10,7 @@ import Stage5 from "../components/stage5.js";
 
 export default class user extends Component {
     state = {
-        currentStage: 3,
+        currentStage: 5,
     };
 
     render() {

@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap');
+
 .user-dashboard-main-tab {
-    /* border: black 1px solid; */
-    height: 200px;
+    border: black 1px solid;
+    height: 230px;
     width: 50%;
-    background-color: #F36D6D;
+    background-image: linear-gradient(#FF8B72, #FF7472);
     margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     cursor: pointer;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
 }
 
 .logo-img {
@@ -21,12 +27,38 @@
     width: 60%;
 }
 
+.user-tab-buttons{
+    text-align: right;
+}
+
 .user-tab-payment {
-    text-align: center;
+    text-align: right;
+}
+
+.user-tab-payment h1{
+    color: white;
+    font-size: 36px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.user-tab-payment h3{
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.user-tab-payment h4{
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
 }
 
 .button {
-    background-color: black;
+    background-color: white;
+    color: white;
 }
 
 .prompt {
@@ -37,4 +69,24 @@
     margin: auto;
     border: 2px black solid;
     color: black;
+}
+
+.prompt-p{
+    background-image: linear-gradient(#FF8B72, #FF7472);
+    width: 70%;
+    border-radius: 10px;
+    height: 40px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.prompt h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
 }
