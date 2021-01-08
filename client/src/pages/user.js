@@ -8,7 +8,7 @@ import Stage3 from "../components/stage3.js";
 
 export default class user extends Component {
     state = {
-        currentStage: 2,
+        currentStage: 3,
     };
 
     render() {
