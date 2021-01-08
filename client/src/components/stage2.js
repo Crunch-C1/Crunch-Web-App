@@ -38,7 +38,7 @@ export default class stage2 extends Component {
         >
           <div className="user-dashboard-main-logo">
             <img src={logo}></img>
-            <h1>Input Choices</h1>
+            <h1>Pick Restaurants</h1>
           </div>
           <div className="user-dashboard-main-restaurants">
             <Grid container direction="column" alignItems="center" spacing={5}>

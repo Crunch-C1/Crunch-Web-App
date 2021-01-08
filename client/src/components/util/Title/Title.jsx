@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Title.module.css';
-import { Typography } from '@material-ui/core';
 
 const Title = (props) => {
     return (

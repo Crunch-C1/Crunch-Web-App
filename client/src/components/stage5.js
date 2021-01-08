@@ -5,7 +5,7 @@ import "../css/stage5.css";
 import Tab from './stage5Components/tab';
 import Button from '@material-ui/core/Button';
 
-const stage5 = () => {
+const Stage5 = () => {
     const totalPayment = 100;
 
     return (
@@ -34,7 +34,7 @@ const stage5 = () => {
     )
 }
 
-export default stage5;
+export default Stage5;
 
 
 
