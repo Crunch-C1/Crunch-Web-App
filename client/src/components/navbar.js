@@ -16,9 +16,9 @@ import {
               <h1 className="navbar-logo">crunch</h1>
             </NavbarBrand>
             <Nav className="ml-auto">
-              <NavLink href="contact">About</NavLink>
-              <NavLink href="about">Documentation</NavLink>
-              <NavLink href="login">Login</NavLink>
+              <NavLink href="/contact">About</NavLink>
+              <NavLink href="/about">Documentation</NavLink>
+              <NavLink href="/login">Login</NavLink>
             </Nav>
           </Navbar>
         </div>

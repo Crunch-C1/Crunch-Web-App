@@ -12,7 +12,7 @@ export default class EmptyPage extends Component {
           <Container className="main-home-background" fluid={true}>
             <Container className="main-home-circle" fluid={true}>
               <div className="home-first-div">
-                <h1>Lorem Ipsum</h1>
+                <h1>Night Out With Friends?</h1>
                 <p>Let Us Do The Crunching</p>
               </div>
             </Container>
