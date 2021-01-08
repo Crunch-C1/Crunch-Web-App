@@ -1,21 +1,25 @@
 import React, { Component } from 'react'
 import { Container } from 'reactstrap';
+import { Typography } from '@material-ui/core';
 import logo from "../images/Crunch_logo_colored.png";
 import "../css/stage4.css";
-export default class stage4 extends Component {
-    render() {
-        return (
-            <div>
-                <Container className = "user-dashboard-main">
-                    <div className = "user-dashboard-main-logo">
-                        <img src = {logo}></img>
-                        <h1>Room Creation</h1>
-                    </div>
-                    <div className = "user-dashboard-main-form">
 
+const Stage4 = () => {
+    return (
+        <div>
+            <Container className="user-dashboard-main">
+                
+                <div className="user-dashboard-main-form">
+                    <Typography variant="h3" component="h3">Cant Find Your Item</Typography>
+                    {/* <Form></Form> */}
+                    <Typography variant="h3" component="h3">My Menu Items</Typography>
+                    <div style={{display: "flex"}}>
+                        
                     </div>
-                </Container>
-            </div>
-        )
-    }
-}
+                </div>
+            </Container>
+        </div>
+    )
+};
+
+export default Stage4;

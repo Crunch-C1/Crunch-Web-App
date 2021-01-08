@@ -12,9 +12,11 @@ import {
 import Home from './pages/home.js';
 import Login from './pages/login.js';
 import User from './pages/user.js';
+
 export default class App extends Component {
   render() {
     return (
+
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
