@@ -128,7 +128,6 @@ export default class stage2 extends Component {
           className="user-dashboard-main-stage-two-content"
           fluid={true}
         >
-<<<<<<< HEAD
           <div className="user-dashboard-main-logo">
             <img src={logo}></img>
             <h1>Pick Restaurants</h1>
@@ -138,18 +137,6 @@ export default class stage2 extends Component {
               <Grid item>
                 <div className="user-dashboard-main-selection">
                   <Grid
-=======
-      <div>
-      <div className="user-dashboard-main-restaurants">
-      <Grid container direction="column" alignItems="center" spacing={5}>
-      <Grid item>
-       <div className="user-dashboard-main-logo">
-          <img src={logo}></img>
-          <h1>Input Choices</h1>
-        </div>
-        <div className="user-dashboard-main-selection">
-        <Grid
->>>>>>> 86aea1f7663e33e95d4c295eaa934b5aa4223d44
                     container
                     direction="column"
                     alignItems="center"
@@ -194,9 +181,8 @@ export default class stage2 extends Component {
       </Dialog>
       </Grid>
     </div>
-    </div>
-    </Container>
     </Container> 
+    </Container>
     );
   }
 }
