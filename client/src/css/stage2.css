@@ -92,10 +92,10 @@
 
 
 
-.first-pick-tab{
+.first-pick-tab {
   width: 400px;
   height: 50px;
-  background-image: linear-gradient(#FF8B72, #FF7472);
+  background-image: linear-gradient(#ff8b72, #ff7472);
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -106,11 +106,11 @@
   border-radius: 10px;
 }
 
-.first-pick-tab h1{
+.first-pick-tab h1 {
   color: white;
   font-size: 15px;
   line-height: 50px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
 }
 @media screen and (max-width: 600px) {
