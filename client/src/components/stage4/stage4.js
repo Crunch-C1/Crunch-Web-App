@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { Container, InputGroup, Modal, ModalBody, ModalHeader, ModalFooter, Input } from 'reactstrap';
+import { Container, Input } from 'reactstrap';
 
 // import logo from "../../images/Crunch_logo_colored.png";
 import "../../css/stage4.css";
 import ItemList from './ItemList';
 import Title from '../util/Title/Title';
-import { FormControl, Button } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { fetchCategories } from '../../api/Util';
 
 // const MenuModal = ({addItem, show, onHide}) => {

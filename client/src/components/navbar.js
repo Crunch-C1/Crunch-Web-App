@@ -1,14 +1,9 @@
 import {
     Navbar,
     NavbarBrand,
-    NavbarToggler,
-    Collapse,
     Nav,
-    NavItem,
     NavLink,
-    Container,
   } from "reactstrap";
-  import { Button } from "reactstrap";
   import React, { Component } from "react";
   import "../css/navbar.css";
   

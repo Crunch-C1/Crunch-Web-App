@@ -51,76 +51,61 @@ export default class stage2 extends Component {
           className="user-dashboard-main-stage-two-content"
           fluid={true}
         >
-          <div>
-            <div className="user-dashboard-main-restaurants">
-              <Grid
-                container
-                direction="column"
-                alignItems="center"
-                spacing={5}
-              >
-                <Grid item>
-                  <div className="user-dashboard-main-logo">
-                    <img src={logo}></img>
-                    <h1>Input Choices</h1>
-                  </div>
-                  <div className="user-dashboard-main-selection">
-                    <Grid
-                      container
-                      direction="column"
-                      alignItems="center"
-                      spacing={2}
-                    >
-                      {this.state.selections.map((item) => (
-                        <Grid item>
-                          <div className="entry">{item}</div>
-                        </Grid>
-                      ))}
-                      <Button
-                        className="adds"
-                        variant="outlined"
-                        color="primary"
-                        onClick={this.handleClickOpen}
-                      >
-                        +
-                      </Button>
-                    </Grid>
-                  </div>
-                </Grid>
-                <Dialog
-                  open={this.state.open}
-                  onClose={this.handleClose}
-                  aria-labelledby="form-dialog-title"
-                >
-                  <DialogTitle id="form-dialog-title">Food Options</DialogTitle>
-                  <DialogContent>
-                    <DialogContentText>
-                      Please input any restaurant that you would like to go to.
-                    </DialogContentText>
-                    <TextField
-                      autoFocus
-                      margin="dense"
-                      id="name"
-                      label="Restaurant of Choice"
-                      type="restaurant"
-                      fullWidth
-                      onChange={this.recordText}
-                    />
-                  </DialogContent>
-                  <DialogActions>
-                    <Button onClick={this.handleClose} color="primary">
-                      Cancel
-                    </Button>
-                    <Button onClick={this.storeInfo} color="primary">
-                      Confirm
-                    </Button>
-                  </DialogActions>
-                </Dialog>
-              </Grid>
-            </div>
+          <div className="user-dashboard-main-logo">
+            <img src={logo}></img>
+            <h1>Pick Restaurants</h1>
           </div>
-        </Container>
-      </Container>
+          <div className="user-dashboard-main-restaurants">
+            <Grid container direction="column" alignItems="center" spacing={5}>
+              <Grid item>
+                <div className="user-dashboard-main-selection">
+                  <Grid
+                    container
+                    direction="column"
+                    alignItems="center"
+                    spacing={2}
+                  >
+        {this.state.selections.map((item) => (
+          <Grid item>
+            <div className="entry">{item}</div>
+            </Grid>
+      ))}
+      <Button className="adds" variant="outlined" color="primary" onClick={this.handleClickOpen}>
+        +
+      </Button>
+      </Grid>
+      </div>
+      </Grid>
+      <Dialog open={this.state.open} onClose={this.handleClose} aria-labelledby="form-dialog-title">
+        <DialogTitle id="form-dialog-title">Food Options</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+           Please input any restaurant that you would like to go to.
+          </DialogContentText>
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Restaurant of Choice"
+            type="restaurant"
+            fullWidth
+            onChange={this.recordText}
+          />
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={this.handleClose} color="primary">
+            Cancel
+          </Button>
+          <Button onClick={this.storeInfo} color="primary">
+            Confirm
+          </Button>
+        </DialogActions>
+        
+      </Dialog>
+      </Grid>
+    </div>
+    </Container> 
+    </Container>
     );
   }
 }
