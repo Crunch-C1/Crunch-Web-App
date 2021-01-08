@@ -16,8 +16,6 @@ router.post('/', async (req: any, res: any) => {
 
     for(var i = 0; i < choices.length; i++){
         var choice = choices[i];
-        console.log(choice.restaurant.toString());
-        console.log(orderedRestaurants)
         var place = orderedRestaurants.indexOf(choice.restaurant.toString());
         console.log(place);
         if(place == 0){
