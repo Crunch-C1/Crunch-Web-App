@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "../css/sidebar.css";
-import { Container } from 'reactstrap';
+import { Container, NavLink } from 'reactstrap';
 import pfp from "../images/pfp.png";
 import settings from "../images/settings.png";
 
@@ -18,9 +18,9 @@ export default class sidebar extends Component {
                     </div>
                     <div className = "side-bar-selection">
                         <hr/>
-                        <h3>Past Restaurants</h3>
+                        <NavLink href="Restaurants">Past Restaurants</NavLink>
                         <hr/>
-                        <h3>Past Expenses</h3>
+                        <NavLink href="Expenses">Past Expenses</NavLink>
                         <hr/>
                         <h3>Past Choices</h3>
                         <hr/>
