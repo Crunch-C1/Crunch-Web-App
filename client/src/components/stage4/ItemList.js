@@ -17,7 +17,7 @@ function Tile({name, price, clicked}){
 
 export default function ItemList({items, clicked}) {
     return (
-        <div style={{display: "flex", overflow: "auto"}}>
+        <div className = "item-list" style={{display: "flex"}}>
             {items.map((item, index) => <Tile key={index} name={item.name} price={item.price} clicked={() => clicked(items[index])}/>)}
         </div>
     )

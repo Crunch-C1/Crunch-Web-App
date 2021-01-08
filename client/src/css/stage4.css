@@ -1,4 +1,4 @@
-.user-dashboard-main{
+.user-dashboard-main-stage-four{
     height: 100vh;
     width: 100%;
     grid-column: 2 / span 1;
@@ -8,4 +8,25 @@
     background-position-y: bottom;
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.item-list{
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.item-list::-webkit-scrollbar {
+    display: none;
+  }
+
+.manual{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.user-dashboard-main-form-stage-four{
+    height: 100%;
+    padding: 60px;
+    padding-left: 100px;
+    margin: auto;
 }

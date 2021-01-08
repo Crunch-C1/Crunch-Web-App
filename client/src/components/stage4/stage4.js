@@ -38,8 +38,8 @@ const AddItemForm = ({addItem}) => {
     const [foodCost, setFoodCost] = useState("");
 
     return (
-        <div>
-            <Title>Select Items</Title>
+        <div className = "manual">
+            <Title>Can't Find Your Item? Add Manually.</Title>
             <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', alignItems: 'center', width: "70%"}}>
                 <Input placeholder={"Name"} type="text" style={{marginBottom: 10}} onInput={(event) => setFoodName(event.target.value)}></Input>
                 <Input placeholder={"Price"} onInput={(event) => {setFoodCost(event.target.value)}} min={0} max={1e6} type="number" style={{marginBottom: 10}}></Input>
@@ -77,15 +77,14 @@ const Stage4 = ({setBalance}) => {
 
     return (
         <div>
-            <Container className="user-dashboard-main" fluid={true}>
-                <div className="user-dashboard-main-form">
+            <Container className="user-dashboard-main-stage-four" fluid={true}>
+                <div className="user-dashboard-main-form-stage-four">
                     {/* <AddItemsMenu showMenu={menuShow} toggleMenu={(newVal) => setMenuShow(newVal)} showEntry={manualEntryShow} toggleEntry={(newVal) => setManualEntryShow(newVal)}/>
                     <Title variant="h4" component="h3">My Menu Items</Title>
                     <ItemList items={[]}></ItemList> */
                     }
                     <Title>Menu Items</Title>
                     <ItemList items={menu} clicked={(item) => {console.log("ITEM:",item); setMyMenuItems(myMenuItems.concat(item));}}/>
-                    <Title>Add Manually</Title>
                     <AddItemForm addItem={(foodName, foodCost) => setMyMenuItems(myMenuItems.concat({name: foodName, price: foodCost}))}/>
                     <Title>My Items</Title>
                     <ItemList items={myMenuItems} clicked={(item) => console.log("Stuff")}/>
