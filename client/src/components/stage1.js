@@ -12,10 +12,10 @@ export default class stage1 extends Component {
   render() {
     return (
       <Container className="user-dashboard-main-stage-one" fluid={true}>
-        <Container
-          className="user-dashboard-main-stage-one-content"
-          fluid={true}
-        >
+          <Container
+            className="user-dashboard-main-stage-one-content"
+            fluid={true}
+          >
           <div className="user-dashboard-main-logo">
             <img src={logo}></img>
             <h1>Room Creation</h1>
