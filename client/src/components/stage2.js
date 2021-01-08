@@ -23,8 +23,7 @@ const Stage2 = ({room, setRoom, next}) => {
     let newRoom = room;
     console.log(room);
     const restaurants = await findRestaurantsByName(selections);
-    console.log(restaurants);
-    console.log(newRoom);
+    newRoom.choices = newRoom.choices.concat(restaurants);
     setRoom(newRoom);
     next();
   }
