@@ -18,6 +18,7 @@ const Stage1 = ({room, setRoom, next}) => {
     if(name.length && name.length && phoneNumber.length) {
       const room = await createRoom(name, phoneNumber, title, restrictions);
       setRoom(room);
+      console.log(room);
       next();
     } else {
       alert("Please fill in the required fields");

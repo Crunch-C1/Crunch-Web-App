@@ -10,6 +10,17 @@ const createUser = async (username, phone) => {
 
 }
 
+const findRestaurantsByName = async (selections) => {
+    const restaurants = [];
+    for(const selection of selections) {
+        const res = await axios.get(`${baseURL}/restaurant/name`, {
+            params: {name: selection}
+        });
+        restaurants.push(res.data);
+    }
+    return restaurants;
+}
+
 const createRoom = async (username, phone, roomname, restrictions) => {
 
     const res = await axios.post(`${baseURL}/room`, {
@@ -46,4 +57,4 @@ const fetchCategories = async (roomId) => {
     return categories;
 }
 
-export {fetchCategories, createRoom};
+export {fetchCategories, createRoom, findRestaurantsByName};
