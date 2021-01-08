@@ -82,9 +82,9 @@ const Stage2 = ({room, setRoom, next}) => {
             <div className="entry">{item}</div>
             </Grid>
       ))}
-      {selections.length < 5 ? <Button className="adds" variant="outlined" color="primary" onClick={handleClickOpen}>
+      {selections.length < 5 ? <div className="adds" variant="outlined" color="primary" onClick={handleClickOpen}>
         +
-      </Button> : ''}
+      </div> : ''}
       </Grid>
       </div>
       <Button variant="outlined" color="primary" size="large"  style={{margin: "2em"}} onClick={() => {proceed();}}>Continue</Button>

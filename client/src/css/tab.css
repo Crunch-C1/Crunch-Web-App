@@ -34,7 +34,11 @@
 .user-tab-payment {
     text-align: right;
 }
-
+@media screen and (max-width: 600px) {
+    .user-tab-payment {
+        text-align: center;
+    }
+}
 .user-tab-payment h1{
     color: white;
     font-size: 36px;

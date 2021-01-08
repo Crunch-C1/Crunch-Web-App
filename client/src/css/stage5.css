@@ -30,3 +30,20 @@
     width: 120px;
     align-self: center;
 } */
+
+@media screen and (max-width: 600px) {
+    img.logo-img
+    {
+        display:none;
+    }
+    div.user-dashboard-main-tab
+    {
+        width: 100%;
+        
+    }
+    div.user-tabs-stage5
+    {
+        height: 500px;
+    }
+    
+    }

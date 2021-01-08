@@ -10,9 +10,10 @@ import Stage4 from '../components/stage4/stage4.js';
 import Stage5 from '../components/stage5';
  const User = () => {
     
-    const [stage, setStage] = useState(1);
+    //const [stage, setStage] = useState(1);
     const [room, setRoom] = useState({});
-    
+    const stage = 3;
+    const setStage = 3;
     const incrementStage = () => {
         setStage(stage + 1);
     }

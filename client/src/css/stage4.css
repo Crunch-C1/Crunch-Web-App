@@ -34,3 +34,9 @@
 .submit-btn {
     margin: auto;
 }
+@media screen and (max-width: 600px) {
+div.user-dashboard-main-form-stage-four
+{
+    padding:10px;
+}
+}
