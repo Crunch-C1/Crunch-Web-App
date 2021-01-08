@@ -1,0 +1,40 @@
+.user-dashboard-main-tab {
+    /* border: black 1px solid; */
+    height: 200px;
+    width: 50%;
+    background-color: #F36D6D;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo-img {
+    border-radius: 50%;
+}
+
+.user-tab-content {
+    width: 60%;
+}
+
+.user-tab-payment {
+    text-align: center;
+}
+
+.button {
+    background-color: black;
+}
+
+.prompt {
+    background-color: white;
+    z-index: 5;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border: 2px black solid;
+    color: black;
+}
