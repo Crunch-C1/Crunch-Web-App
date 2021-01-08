@@ -1,0 +1,9 @@
+.side-bar{
+    height: 100vh;
+    background-image: linear-gradient(#FF8B72, #FF7472);
+    grid-column: 1 / span 1;
+    grid-row: 1/ span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
