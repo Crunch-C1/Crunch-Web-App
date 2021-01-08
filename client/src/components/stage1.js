@@ -16,9 +16,9 @@ const Stage1 = ({room, setRoom, next}) => {
   const initRoom = async () => {
     console.log("Called init");
     if(name.length && name.length && phoneNumber.length) {
-      const room = await createRoom(name, phoneNumber, title, restrictions);
-      setRoom(room);
-      console.log(room);
+      let newRoom = await createRoom(name, phoneNumber, title, restrictions);
+      setRoom(newRoom);
+      console.log(newRoom, room);
       next();
     } else {
       alert("Please fill in the required fields");

@@ -20,8 +20,8 @@ import Stage5 from '../components/stage5';
     return (
         <div className = "user-dashboard">
             <Sidebar/>
-            {stage === 1 ? <Stage1 room={room} setRoom={setRoom} next={incrementStage} /> : null}
-            {stage === 2 ? <Stage2 setRoom={setRoom} next={incrementStage} /> : null}
+            {stage === 1 ? <Stage1 room={room} setRoom={(newRoom) => setRoom(newRoom)} next={incrementStage} /> : null}
+            {stage === 2 ? <Stage2 setRoom={(newRoom) => setRoom(newRoom)} next={incrementStage} /> : null}
             {stage === 3 ? <Stage3 room={room} next={incrementStage} /> : null}
             {stage === 4 ? <Stage4 room={room} next={incrementStage} /> : null}
             {stage === 5 ? <Stage5 room={room} next={incrementStage} /> : null}
