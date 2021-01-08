@@ -4,6 +4,14 @@ const {User} = require('../models/User');
 const express = require('express');
 const router = express.Router();
 
+router.get('/stage', async (req: any, res: any) => {
+    const roomId = req.query['roomId'];
+    if(true) {
+        const room = await Room.findById(roomId);
+        console.log(room);
+    }
+})
+
 router.get('/', async (req: any, res: any) => {
     const roomId = req.query['roomId'];
     try {
